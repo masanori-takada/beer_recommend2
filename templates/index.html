@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Craft Beer Recommender</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body class="main">
+
+    <div class="heading">
+        <h1>Craft Beer Recommender</h1>
+    </div>
+
+
+    <div>
+        <form method="post" action="/result">
+            <table id="form">
+                <tr>
+                    <td>アルコール度数(%)</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="abv" pattern="^[\d]{1,2}.[\d]{1}$" maxlength="4" placeholder="7.5"
+                            required></td>
+                </tr>
+                <tr>
+                    <td>IBU (苦さの指標)</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ibu" pattern="^[\d]{1,2}.[\d]{1}$" maxlength="4" placeholder="25.5"
+                            required></td>
+                </tr>
+                <tr>
+                    <td>※ 小数点1桁まで入力してください</td>
+                </tr>
+                <tr>
+                    <td>さっぱりが好き:</td>
+                </tr>
+                <tr>
+                    <td>アルコール度数低め(3.0~6.0%)IBU低め(5.0~20.0)</td>
+                </tr>
+                <tr>
+                    <td>苦めが好き:</td>
+                </tr>
+                <tr>
+                    <td>アルコール度数高め(6.0~10.0%)IBU高め(45.0~)</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Go!"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

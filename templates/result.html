@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>le.css
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body class="main">
+
+    <div class="heading">
+        おすすめビールスタイルは...<h1 align="center">{{style}}</h1>
+    </div>
+
+
+    <div align="center">
+
+        <span id="param">
+            入力した値<br>
+            度数: {{ param.0 }}%<br>
+            IBU: {{param.1}}
+        </span>
+
+        <table border="1" id="result">
+            <tr>
+                <th colspan="3">{{ style }}のおすすめビール</th>
+            </tr>
+            <tr>
+                <th>ビール名</th>
+                <th>度数</th>
+                <th>IBU</th>
+            </tr>
+            {% for beer in result.itertuples() %}
+            <tr>
+                <td>{{beer.name}}</td>
+                <td>{{beer.abv}}</td>
+                <td>{{beer.ibu}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">back</a>
+    </div>
+
+</body>
+
+</html>

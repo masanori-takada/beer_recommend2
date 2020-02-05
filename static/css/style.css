@@ -1,0 +1,53 @@
+body.main {
+    background-color: #ffee80;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+div.heading {
+    background-color: #fffffc;
+    width: 100%;
+    text-align: center;
+}
+
+p#param {
+    background-color: #fffffc;
+}
+
+table {
+    background-color: #fffffc;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-spacing: 0;
+}
+
+table#form {
+    width: 350px;
+}
+
+table#form tr td {
+    padding: 5px;
+    text-align: center;
+}
+
+span#param {
+    text-align: left;
+}
+
+table#result {
+    width: auto;
+}
+
+table#result tr th,
+table#result tr td {
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: #5e5e5e;
+    align-items: center;
+    padding: 5px;
+}
